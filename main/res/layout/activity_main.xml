@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="@drawable/azul">
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/questaoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:text="Pergunta aqui" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/mapa"/>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="310dp"
+    android:layout_marginLeft="100dp"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/opcao1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questaoTextView"
+        android:text="Opção 1" />
+
+    <Button
+        android:id="@+id/opcao2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/opcao1Button"
+        android:text="Opção 2" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="100dp"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/opcao3Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/opcao2Button"
+        android:layout_marginTop="8dp"
+        android:text="Opção 3" />
+
+    <Button
+        android:id="@+id/opcao4Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/opcao3Button"
+        android:layout_marginTop="8dp"
+        android:text="Opção 4" />
+
+
+
+</LinearLayout>
+    <Button
+        android:id="@+id/btVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonClick"
+        android:layout_marginLeft="155dp"
+        android:text="Voltar"
+        android:layout_marginTop="430dp"/>
+
+</RelativeLayout>
